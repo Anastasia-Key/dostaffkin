@@ -1,23 +1,10 @@
-import { Routes } from '@angular/router';
-import { Home } from './pages/home/home';
-import { Order } from './pages/order/order';
-import { Track } from './pages/track/track';
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
-export const routes: Routes = [
-  {
-    path: '',
-    component: Home
-  },
-  {
-    path: 'order',
-    component: Order
-  },
-  {
-    path: 'track',
-    component: Track
-  },
-  {
-    path: '**',
-    redirectTo: ''
-  }
-];
+@Component({
+  selector: 'app-root',
+  imports: [RouterOutlet],
+  template: '<router-outlet/>',
+})
+export class App {
+}
