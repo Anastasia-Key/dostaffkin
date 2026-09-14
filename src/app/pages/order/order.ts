@@ -3,7 +3,7 @@ import { Header } from '../../header/header';
 import { DELIVERY_SIZES, DELIVERY_SPEEDS } from './order.config';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { UpperCasePipe } from '@angular/common';
-import { DeliveryApi } from '../../services/delivery-api';
+import { DeliveryApi } from '../../services /delivery-api';
 
 declare var ymaps: any;
 
